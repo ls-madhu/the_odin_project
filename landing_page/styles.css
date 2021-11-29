@@ -1,0 +1,178 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.sign_up_button {
+    background-color: #3882F6;
+    font-size: 20px;
+    padding: 5px 30px;
+    color: #E5E7EB;
+    font-weight: 900;
+    border-radius: 5px;
+    border: none;
+}
+
+.header_section {
+    background-color: #1F2937;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0; 
+}
+
+.header_logo {
+    font-size: 32px;
+    color: #F9FAF8;
+    font-weight: 600;
+}
+
+.nav_list {
+    display: flex;
+}
+
+.nav_item {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.nav_item a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #E5E7EB;
+}
+
+.hero_section {
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 0;
+}
+
+.hero_title {
+    font-size: 72px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.hero_description {
+    font-size: 24px;
+    color: #E5E7EB;
+    margin-bottom: 20px;
+}
+
+.hero_image div{
+    width: 720px;
+    height: 320px;
+    background-color: #6d747d;
+    color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.info_section {
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+
+.info_title {
+    text-align: center;
+    font-size: 48px;
+}
+
+.info_container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.info {
+    text-align: center;
+}
+
+.info div{
+    width: 200px;
+    height: 200px;
+    border: 5px solid #3882F6;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.info p {
+    width: 200px;
+    font-size: 20px;
+    color: #6d747d;
+    margin-top: 10px;
+}
+
+.testimonial_section {
+    background-color: #e5e7eb;
+    padding: 150px 0;
+}
+
+.testimonial_section blockquote {
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 300;
+    color: #27313e;
+}
+
+.testimonial_section .container > p {
+    text-align: right;
+    font-weight: 900;
+    font-size: 24px;
+    padding-right: 100px;
+}
+
+.sign_up_section {
+    padding: 120px 0;
+}
+
+.sign_up_banner {
+    background-color: #3882F6;
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sign_up_banner h3 {
+    color: #F9FAF8;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.sign_up_banner p {
+    color: #E5E7EB;
+    font-size: 24px;
+}
+
+.sign_up_banner .sign_up_button {
+    border: 2px solid #E5E7EB;
+}
+
+.footer {
+    background-color: #1F2937;
+    width: 100%;
+    color: #E5E7EB;
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+}
