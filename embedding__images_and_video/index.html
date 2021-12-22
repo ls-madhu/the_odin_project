@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedding Images and Video</title>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="youtube logo">
+        <div class="search_input">
+            <input placeholder="Search" type="search" name="search" id="search">
+            <span for="search"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                    style="pointer-events: none; width: 100%; height: 100%;">
+                    <g>
+                        <path
+                            d="M20.87,20.17l-5.59-5.59C16.35,13.35,17,11.75,17,10c0-3.87-3.13-7-7-7s-7,3.13-7,7s3.13,7,7,7c1.75,0,3.35-0.65,4.58-1.71 l5.59,5.59L20.87,20.17z M10,16c-3.31,0-6-2.69-6-6s2.69-6,6-6s6,2.69,6,6S13.31,16,10,16z">
+                        </path>
+                    </g>
+                </svg></span>
+        </div>
+        <button type="button" class="sign_in_button"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                focusable="false" style="pointer-events: none; width: 100%; height: 100%;">
+                <g>
+                    <path
+                        d="M12,2C6.48,2,2,6.48,2,12c0,5.52,4.48,10,10,10s10-4.48,10-10C22,6.48,17.52,2,12,2z M12,3c4.96,0,9,4.04,9,9 c0,1.42-0.34,2.76-0.93,3.96c-1.53-1.72-3.98-2.89-7.38-3.03C14.57,12.6,16,10.97,16,9c0-2.21-1.79-4-4-4C9.79,5,8,6.79,8,9 c0,1.97,1.43,3.6,3.31,3.93c-3.4,0.14-5.85,1.31-7.38,3.03C3.34,14.76,3,13.42,3,12C3,7.04,7.04,3,12,3z M9,9c0-1.65,1.35-3,3-3 s3,1.35,3,3c0,1.65-1.35,3-3,3S9,10.65,9,9z M12,21c-3.16,0-5.94-1.64-7.55-4.12C6.01,14.93,8.61,13.9,12,13.9 c3.39,0,5.99,1.03,7.55,2.98C17.94,19.36,15.16,21,12,21z">
+                    </path>
+                </g>
+            </svg>SIGN IN</button>
+    </header>
+    <main>
+        <div class="container">
+            <section class="content">
+                <section class="video">
+                    <iframe class="video_player" src="https://www.youtube.com/embed/nIoXOplUvAw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div class="video_about">
+                        <h2 class="video_title">Blender 3.0 Beginner Tutorial - Part 1</h2>
+                        <div class="video_info">
+                            <p class="video_views">387,876 views • Premiered Dec 3, 2021</p>
+                            <div class="video_options">
+                                <div class="video_option likes">
+                                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                                        style="pointer-events: none; width: 100%; height: 100%;">
+                                        <g>
+                                            <path
+                                                d="M18.77,11h-4.23l1.52-4.94C16.38,5.03,15.54,4,14.38,4c-0.58,0-1.14,0.24-1.52,0.65L7,11H3v10h4h1h9.43 c1.06,0,1.98-0.67,2.19-1.61l1.34-6C21.23,12.15,20.18,11,18.77,11z M7,20H4v-8h3V20z M19.98,13.17l-1.34,6 C18.54,19.65,18.03,20,17.43,20H8v-8.61l5.6-6.06C13.79,5.12,14.08,5,14.38,5c0.26,0,0.5,0.11,0.63,0.3 c0.07,0.1,0.15,0.26,0.09,0.47l-1.52,4.94L13.18,12h1.35h4.23c0.41,0,0.8,0.17,1.03,0.46C19.92,12.61,20.05,12.86,19.98,13.17z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <p>22K</p>
+                                </div>
+                                <div class="video_option dislikes">
+                                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                                        style="pointer-events: none; width: 100%; height: 100%;">
+                                        <g>
+                                            <path
+                                                d="M17,4h-1H6.57C5.5,4,4.59,4.67,4.38,5.61l-1.34,6C2.77,12.85,3.82,14,5.23,14h4.23l-1.52,4.94C7.62,19.97,8.46,21,9.62,21 c0.58,0,1.14-0.24,1.52-0.65L17,14h4V4H17z M10.4,19.67C10.21,19.88,9.92,20,9.62,20c-0.26,0-0.5-0.11-0.63-0.3 c-0.07-0.1-0.15-0.26-0.09-0.47l1.52-4.94l0.4-1.29H9.46H5.23c-0.41,0-0.8-0.17-1.03-0.46c-0.12-0.15-0.25-0.4-0.18-0.72l1.34-6 C5.46,5.35,5.97,5,6.57,5H16v8.61L10.4,19.67z M20,13h-3V5h3V13z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <p>DISLIKE</p>
+                                </div>
+                                <div class="video_option share">
+                                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                                        style="pointer-events: none; width: 100%; height: 100%;">
+                                        <g mirror-in-rtl="">
+                                            <path
+                                                d="M15,5.63L20.66,12L15,18.37V15v-1h-1c-3.96,0-7.14,1-9.75,3.09c1.84-4.07,5.11-6.4,9.89-7.1L15,9.86V9V5.63 M14,3v6 C6.22,10.13,3.11,15.33,2,21c2.78-3.97,6.44-6,12-6v6l8-9L14,3L14,3z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <p>SHARE</p>
+                                </div>
+                                <div class="video_option save">
+                                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                                        style="pointer-events: none; width: 100%; height: 100%;">
+                                        <g>
+                                            <path
+                                                d="M22,13h-4v4h-2v-4h-4v-2h4V7h2v4h4V13z M14,7H2v1h12V7z M2,12h8v-1H2V12z M2,16h8v-1H2V16z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <p>SAVE</p>
+                                </div>
+                                <div class="video_option more">
+                                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                                        style="pointer-events: none; width: 100%; height: 100%;">
+                                        <g>
+                                            <path
+                                                d="M7.5,12c0,0.83-0.67,1.5-1.5,1.5S4.5,12.83,4.5,12s0.67-1.5,1.5-1.5S7.5,11.17,7.5,12z M12,10.5c-0.83,0-1.5,0.67-1.5,1.5 s0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5S12.83,10.5,12,10.5z M18,10.5c-0.83,0-1.5,0.67-1.5,1.5s0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5 S18.83,10.5,18,10.5z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="description">
+                            <img src="https://yt3.ggpht.com/FJzSJC_BbfPzbDW0JUF1Jbc5Q3bELn4ntoAmzS0sNlxQEuEXnMwkhI1r1dKpRbnicd60tdwyrlc=s88-c-k-c0x00ffffff-no-rj"
+                                alt="" class="creator_pic">
+                            <div class="description_info">
+                                <div class="creator_name">
+                                    Blender Guru
+                                </div>
+                                <div class="creator_subs">
+                                    2.02M subscribers
+                                </div>
+                                <div class="description_text">
+                                    Blender tutorial series showing you how to use the most common features,
+                                    like
+                                    modelling, lighting, materials, geometry nodes and rendering - whilst making
+                                    a
+                                    donut.
+                                </div>
+                                <div class="show_more">SHOW MORE</div>
+                            </div>
+                            <div class="subscribe">
+                                <button class="subscribe_btn">
+                                    SUBSCRIBE
+                                </button>
+                            </div>
+                        </div>
+                        <hr>
+                        <section class="comments">
+                            <div class="comments_top">
+                                <div class="comment_count">9 COMMENTS</div>
+                                <div class="comment_sort">
+                                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                                        style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                                        <g>
+                                            <path d="M21,6H3V5h18V6z M15,11H3v1h12V11z M9,17H3v1h6V17z"></path>
+                                        </g>
+                                    </svg>
+                                    <p>SORT</p>
+                                </div>
+                            </div>
+                            <div class="comments_bottom">
+                                <div class="comment_user comment">
+                                    <img src="https://yt3.ggpht.com/a/default-user=s48-c-k-c0x00ffffff-no-rj" alt="">
+                                    <p>Add Comment</p>
+                                </div>
+                                <div class="comment">
+                                    <img src="https://yt3.ggpht.com/ytc/AKedOLR9VyKSzGqxkhlGA85STIs58Lqgt1tJ2gwkAp0L=s88-c-k-c0x00ffffff-no-rj"
+                                        alt="">
+                                    <div class="comment_info">
+                                        <div class="comment_name">Ginger The Dragon <span>3 weeks ago</span></div>
+                                        <div class="comment_text">I started my 3D quest with your original donut. 3
+                                            years later I am now paid for my 3D work. Can't wait to see your updated
+                                            donut :) All respect, my friend.</div>
+                                        <div class="comment_stats">
+                                            <div class="like">
+                                                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                                                    focusable="false"
+                                                    style="pointer-events: none; width: 100%; height: 100%;">
+                                                    <g>
+                                                        <path
+                                                            d="M18.77,11h-4.23l1.52-4.94C16.38,5.03,15.54,4,14.38,4c-0.58,0-1.14,0.24-1.52,0.65L7,11H3v10h4h1h9.43 c1.06,0,1.98-0.67,2.19-1.61l1.34-6C21.23,12.15,20.18,11,18.77,11z M7,20H4v-8h3V20z M19.98,13.17l-1.34,6 C18.54,19.65,18.03,20,17.43,20H8v-8.61l5.6-6.06C13.79,5.12,14.08,5,14.38,5c0.26,0,0.5,0.11,0.63,0.3 c0.07,0.1,0.15,0.26,0.09,0.47l-1.52,4.94L13.18,12h1.35h4.23c0.41,0,0.8,0.17,1.03,0.46C19.92,12.61,20.05,12.86,19.98,13.17z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                                <p>2.9K</p>
+                                            </div>
+                                            <div class="dislike">
+                                                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                                                    focusable="false"
+                                                    style="pointer-events: none; width: 100%; height: 100%;">
+                                                    <g>
+                                                        <path
+                                                            d="M17,4h-1H6.57C5.5,4,4.59,4.67,4.38,5.61l-1.34,6C2.77,12.85,3.82,14,5.23,14h4.23l-1.52,4.94C7.62,19.97,8.46,21,9.62,21 c0.58,0,1.14-0.24,1.52-0.65L17,14h4V4H17z M10.4,19.67C10.21,19.88,9.92,20,9.62,20c-0.26,0-0.5-0.11-0.63-0.3 c-0.07-0.1-0.15-0.26-0.09-0.47l1.52-4.94l0.4-1.29H9.46H5.23c-0.41,0-0.8-0.17-1.03-0.46c-0.12-0.15-0.25-0.4-0.18-0.72l1.34-6 C5.46,5.35,5.97,5,6.57,5H16v8.61L10.4,19.67z M20,13h-3V5h3V13z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="reply">REPLY</div>
+                                        </div>
+                                        <div class="replies">
+                                            <div>
+                                                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                                                    focusable="false" class="style-scope yt-icon"
+                                                    style="pointer-events: none; width: 100%; height: 100%;">
+                                                    <g class="style-scope yt-icon">
+                                                        <path d="M18,9l-6,6L6,9H18z" class="style-scope yt-icon"></path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <p>View 2 replies</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment">
+                                    <img src="https://yt3.ggpht.com/ytc/AKedOLQ3gAcZUJaTy5bPoVSu-bck7jB5dV6oei41dSMDYw=s88-c-k-c0x00ffffff-no-rj"
+                                        alt="">
+                                    <div class="comment_info">
+                                        <div class="comment_name">Pete Coleman <span>2 weeks ago (edited)</span></div>
+                                        <div class="comment_text">I started my 3D journey with your previous Donut
+                                            tutorial series, and now, 11 months later, I am a Junior 3d Artist in the
+                                            GameDev industry. Thank you for your tutorials and good luck to every new
+                                            fellow out there. You all can do it, just like me and many others, starting
+                                            here and now.</div>
+                                        <div class="comment_stats">
+                                            <div class="like">
+                                                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                                                    focusable="false"
+                                                    style="pointer-events: none; width: 100%; height: 100%;">
+                                                    <g>
+                                                        <path
+                                                            d="M18.77,11h-4.23l1.52-4.94C16.38,5.03,15.54,4,14.38,4c-0.58,0-1.14,0.24-1.52,0.65L7,11H3v10h4h1h9.43 c1.06,0,1.98-0.67,2.19-1.61l1.34-6C21.23,12.15,20.18,11,18.77,11z M7,20H4v-8h3V20z M19.98,13.17l-1.34,6 C18.54,19.65,18.03,20,17.43,20H8v-8.61l5.6-6.06C13.79,5.12,14.08,5,14.38,5c0.26,0,0.5,0.11,0.63,0.3 c0.07,0.1,0.15,0.26,0.09,0.47l-1.52,4.94L13.18,12h1.35h4.23c0.41,0,0.8,0.17,1.03,0.46C19.92,12.61,20.05,12.86,19.98,13.17z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                                <p>84</p>
+                                            </div>
+                                            <div class="dislike">
+                                                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                                                    focusable="false"
+                                                    style="pointer-events: none; width: 100%; height: 100%;">
+                                                    <g>
+                                                        <path
+                                                            d="M17,4h-1H6.57C5.5,4,4.59,4.67,4.38,5.61l-1.34,6C2.77,12.85,3.82,14,5.23,14h4.23l-1.52,4.94C7.62,19.97,8.46,21,9.62,21 c0.58,0,1.14-0.24,1.52-0.65L17,14h4V4H17z M10.4,19.67C10.21,19.88,9.92,20,9.62,20c-0.26,0-0.5-0.11-0.63-0.3 c-0.07-0.1-0.15-0.26-0.09-0.47l1.52-4.94l0.4-1.29H9.46H5.23c-0.41,0-0.8-0.17-1.03-0.46c-0.12-0.15-0.25-0.4-0.18-0.72l1.34-6 C5.46,5.35,5.97,5,6.57,5H16v8.61L10.4,19.67z M20,13h-3V5h3V13z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="reply">REPLY</div>
+                                        </div>
+                                        <div class="replies">
+                                            <div>
+                                                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                                                    focusable="false" class="style-scope yt-icon"
+                                                    style="pointer-events: none; width: 100%; height: 100%;">
+                                                    <g class="style-scope yt-icon">
+                                                        <path d="M18,9l-6,6L6,9H18z" class="style-scope yt-icon"></path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <p>View 2 replies</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment">
+                                    <img src="https://yt3.ggpht.com/ytc/AKedOLRpJMYOb4H6TJ86M39Lvr8tuPQ95DLne2ta0J5DRw=s88-c-k-c0x00ffffff-no-rj"
+                                        alt="">
+                                    <div class="comment_info">
+                                        <div class="comment_name">Dani Krossing <span>2 weeks ago</span></div>
+                                        <div class="comment_text">Good timing! I just started watching the previous
+                                            course. 🙂 I'll jump into this one instead hehe. 😊 Really amazing videos
+                                            btw.
+                                        </div>
+                                        <div class="comment_stats">
+                                            <div class="like">
+                                                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                                                    focusable="false"
+                                                    style="pointer-events: none; width: 100%; height: 100%;">
+                                                    <g>
+                                                        <path
+                                                            d="M18.77,11h-4.23l1.52-4.94C16.38,5.03,15.54,4,14.38,4c-0.58,0-1.14,0.24-1.52,0.65L7,11H3v10h4h1h9.43 c1.06,0,1.98-0.67,2.19-1.61l1.34-6C21.23,12.15,20.18,11,18.77,11z M7,20H4v-8h3V20z M19.98,13.17l-1.34,6 C18.54,19.65,18.03,20,17.43,20H8v-8.61l5.6-6.06C13.79,5.12,14.08,5,14.38,5c0.26,0,0.5,0.11,0.63,0.3 c0.07,0.1,0.15,0.26,0.09,0.47l-1.52,4.94L13.18,12h1.35h4.23c0.41,0,0.8,0.17,1.03,0.46C19.92,12.61,20.05,12.86,19.98,13.17z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                                <p>132</p>
+                                            </div>
+                                            <div class="dislike">
+                                                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                                                    focusable="false"
+                                                    style="pointer-events: none; width: 100%; height: 100%;">
+                                                    <g>
+                                                        <path
+                                                            d="M17,4h-1H6.57C5.5,4,4.59,4.67,4.38,5.61l-1.34,6C2.77,12.85,3.82,14,5.23,14h4.23l-1.52,4.94C7.62,19.97,8.46,21,9.62,21 c0.58,0,1.14-0.24,1.52-0.65L17,14h4V4H17z M10.4,19.67C10.21,19.88,9.92,20,9.62,20c-0.26,0-0.5-0.11-0.63-0.3 c-0.07-0.1-0.15-0.26-0.09-0.47l1.52-4.94l0.4-1.29H9.46H5.23c-0.41,0-0.8-0.17-1.03-0.46c-0.12-0.15-0.25-0.4-0.18-0.72l1.34-6 C5.46,5.35,5.97,5,6.57,5H16v8.61L10.4,19.67z M20,13h-3V5h3V13z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="reply">REPLY</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment">
+                                    <img src="https://yt3.ggpht.com/TNBifAMG8ZzAbGRpaEqYkEZZQ4Z1qAJ7ZQ1H77ebUwlHD8n1a7sMciAEIRaKMtKR-fXtcsk4eA=s88-c-k-c0x00ffffff-no-rj"
+                                        alt="">
+                                    <div class="comment_info">
+                                        <div class="comment_name">Pete Coleman <span>1 week ago</span></div>
+                                        <div class="comment_text">Aaaah, some things never change. I did this tutorial
+                                            back in 2.79 and it was my gateway to blender. Now I use it for my
+                                            professional work pretty much daily, so I want to sincerely thank you.
+                                            Wouldn't be where I am today without you.
+                                        </div>
+                                        <div class="comment_stats">
+                                            <div class="like">
+                                                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                                                    focusable="false"
+                                                    style="pointer-events: none; width: 100%; height: 100%;">
+                                                    <g>
+                                                        <path
+                                                            d="M18.77,11h-4.23l1.52-4.94C16.38,5.03,15.54,4,14.38,4c-0.58,0-1.14,0.24-1.52,0.65L7,11H3v10h4h1h9.43 c1.06,0,1.98-0.67,2.19-1.61l1.34-6C21.23,12.15,20.18,11,18.77,11z M7,20H4v-8h3V20z M19.98,13.17l-1.34,6 C18.54,19.65,18.03,20,17.43,20H8v-8.61l5.6-6.06C13.79,5.12,14.08,5,14.38,5c0.26,0,0.5,0.11,0.63,0.3 c0.07,0.1,0.15,0.26,0.09,0.47l-1.52,4.94L13.18,12h1.35h4.23c0.41,0,0.8,0.17,1.03,0.46C19.92,12.61,20.05,12.86,19.98,13.17z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                                <p>41</p>
+                                            </div>
+                                            <div class="dislike">
+                                                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                                                    focusable="false"
+                                                    style="pointer-events: none; width: 100%; height: 100%;">
+                                                    <g>
+                                                        <path
+                                                            d="M17,4h-1H6.57C5.5,4,4.59,4.67,4.38,5.61l-1.34,6C2.77,12.85,3.82,14,5.23,14h4.23l-1.52,4.94C7.62,19.97,8.46,21,9.62,21 c0.58,0,1.14-0.24,1.52-0.65L17,14h4V4H17z M10.4,19.67C10.21,19.88,9.92,20,9.62,20c-0.26,0-0.5-0.11-0.63-0.3 c-0.07-0.1-0.15-0.26-0.09-0.47l1.52-4.94l0.4-1.29H9.46H5.23c-0.41,0-0.8-0.17-1.03-0.46c-0.12-0.15-0.25-0.4-0.18-0.72l1.34-6 C5.46,5.35,5.97,5,6.57,5H16v8.61L10.4,19.67z M20,13h-3V5h3V13z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="reply">REPLY</div>
+                                        </div>
+                                        <div class="replies">
+                                            <div>
+                                                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                                                    focusable="false" class="style-scope yt-icon"
+                                                    style="pointer-events: none; width: 100%; height: 100%;">
+                                                    <g class="style-scope yt-icon">
+                                                        <path d="M18,9l-6,6L6,9H18z" class="style-scope yt-icon"></path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <p>View reply</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </section>
+            <aside class="sidebar">
+                <a href="https://www.youtube.com/watch?v=imdYIdv8F4w" class="side_video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/imdYIdv8F4w/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCBAyhvvX-6GnUwdIuGjbXidbmDsw"
+                            alt="">
+                        <span class="timestamp">21:17</span>
+                    </div>
+                    <div class="side_video_description">
+                        <h3 class="side_video_title side_video_info">Blender 3.0 Beginner Object Editing Tutorial (Donut
+                            part 2)</h3>
+                        <p class="side_video_creator side_video_info">Blender Guru</p>
+                        <p class="side_video_views side_video_info">171K Views • 2 weeks ago</p>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=iyozS5UCbBs" class="side_video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/iyozS5UCbBs/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB7h6hC5uTjC8t_v37zLaIz1CW0SQ"
+                            alt="">
+                        <span class="timestamp">1:00</span>
+                    </div>
+                    <div class="side_video_description">
+                        <h3 class="side_video_title side_video_info">Making an abandoned house in 60 seconds</h3>
+                        <p class="side_video_creator side_video_info">Blender Guru</p>
+                        <p class="side_video_views side_video_info">350K Views • 1 Month ago</p>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=rJ48-SYY1sQ" class="side_video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/rJ48-SYY1sQ/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDyJokl-_Z7j-G-RHywZ9PbnAqALg"
+                            alt="">
+                        <span class="timestamp">41:24</span>
+                    </div>
+                    <div class="side_video_description">
+                        <h3 class="side_video_title side_video_info">Blender is...</h3>
+                        <p class="side_video_creator side_video_info">Blender</p>
+                        <p class="side_video_views side_video_info">160K Views • 2 weeks ago</p>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=idcFMhoSdIc" class="side_video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/idcFMhoSdIc/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAJ2dDEc75o4hQhKLiRCXSazj6m-Q"
+                            alt="">
+                        <span class="timestamp">21:17</span>
+                    </div>
+                    <div class="side_video_description">
+                        <h3 class="side_video_title side_video_info">All 54 Modifiers in Blender Explained in 10 Minutes
+                        </h3>
+                        <p class="side_video_creator side_video_info">Blender Bash</p>
+                        <p class="side_video_views side_video_info">404K Views • 7 monthss ago</p>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=JZIFWEY3l6k" class="side_video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/JZIFWEY3l6k/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBV12nRLcvyc5EPQOXaU_5R11qDpw"
+                            alt="">
+                        <span class="timestamp">6:40</span>
+                    </div>
+                    <div class="side_video_description">
+                        <h3 class="side_video_title side_video_info">Blender 3.0 - Every New Feature in 6 minutes</h3>
+                        <p class="side_video_creator side_video_info">Blender</p>
+                        <p class="side_video_views side_video_info">551K Views • 2 weeks ago</p>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=imdYIdv8F4w" class="side_video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/imdYIdv8F4w/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCBAyhvvX-6GnUwdIuGjbXidbmDsw"
+                            alt="">
+                        <span class="timestamp">21:17</span>
+                    </div>
+                    <div class="side_video_description">
+                        <h3 class="side_video_title side_video_info">Blender 3.0 Beginner Object Editing Tutorial (Donut
+                            part 2)</h3>
+                        <p class="side_video_creator side_video_info">Blender Guru</p>
+                        <p class="side_video_views side_video_info">171K Views • 2 weeks ago</p>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=iyozS5UCbBs" class="side_video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/iyozS5UCbBs/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB7h6hC5uTjC8t_v37zLaIz1CW0SQ"
+                            alt="">
+                        <span class="timestamp">1:00</span>
+                    </div>
+                    <div class="side_video_description">
+                        <h3 class="side_video_title side_video_info">Making an abandoned house in 60 seconds</h3>
+                        <p class="side_video_creator side_video_info">Blender Guru</p>
+                        <p class="side_video_views side_video_info">350K Views • 1 Month ago</p>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=rJ48-SYY1sQ" class="side_video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/rJ48-SYY1sQ/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDyJokl-_Z7j-G-RHywZ9PbnAqALg"
+                            alt="">
+                        <span class="timestamp">41:24</span>
+                    </div>
+                    <div class="side_video_description">
+                        <h3 class="side_video_title side_video_info">Blender is...</h3>
+                        <p class="side_video_creator side_video_info">Blender</p>
+                        <p class="side_video_views side_video_info">160K Views • 2 weeks ago</p>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=idcFMhoSdIc" class="side_video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/idcFMhoSdIc/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAJ2dDEc75o4hQhKLiRCXSazj6m-Q"
+                            alt="">
+                        <span class="timestamp">21:17</span>
+                    </div>
+                    <div class="side_video_description">
+                        <h3 class="side_video_title side_video_info">All 54 Modifiers in Blender Explained in 10 Minutes
+                        </h3>
+                        <p class="side_video_creator side_video_info">Blender Bash</p>
+                        <p class="side_video_views side_video_info">404K Views • 7 monthss ago</p>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=JZIFWEY3l6k" class="side_video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/JZIFWEY3l6k/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBV12nRLcvyc5EPQOXaU_5R11qDpw"
+                            alt="">
+                        <span class="timestamp">6:40</span>
+                    </div>
+                    <div class="side_video_description">
+                        <h3 class="side_video_title side_video_info">Blender 3.0 - Every New Feature in 6 minutes</h3>
+                        <p class="side_video_creator side_video_info">Blender</p>
+                        <p class="side_video_views side_video_info">551K Views • 2 weeks ago</p>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=imdYIdv8F4w" class="side_video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/imdYIdv8F4w/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCBAyhvvX-6GnUwdIuGjbXidbmDsw"
+                            alt="">
+                        <span class="timestamp">21:17</span>
+                    </div>
+                    <div class="side_video_description">
+                        <h3 class="side_video_title side_video_info">Blender 3.0 Beginner Object Editing Tutorial (Donut
+                            part 2)</h3>
+                        <p class="side_video_creator side_video_info">Blender Guru</p>
+                        <p class="side_video_views side_video_info">171K Views • 2 weeks ago</p>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=iyozS5UCbBs" class="side_video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/iyozS5UCbBs/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB7h6hC5uTjC8t_v37zLaIz1CW0SQ"
+                            alt="">
+                        <span class="timestamp">1:00</span>
+                    </div>
+                    <div class="side_video_description">
+                        <h3 class="side_video_title side_video_info">Making an abandoned house in 60 seconds</h3>
+                        <p class="side_video_creator side_video_info">Blender Guru</p>
+                        <p class="side_video_views side_video_info">350K Views • 1 Month ago</p>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=rJ48-SYY1sQ" class="side_video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/rJ48-SYY1sQ/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDyJokl-_Z7j-G-RHywZ9PbnAqALg"
+                            alt="">
+                        <span class="timestamp">41:24</span>
+                    </div>
+                    <div class="side_video_description">
+                        <h3 class="side_video_title side_video_info">Blender is...</h3>
+                        <p class="side_video_creator side_video_info">Blender</p>
+                        <p class="side_video_views side_video_info">160K Views • 2 weeks ago</p>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=idcFMhoSdIc" class="side_video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/idcFMhoSdIc/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAJ2dDEc75o4hQhKLiRCXSazj6m-Q"
+                            alt="">
+                        <span class="timestamp">21:17</span>
+                    </div>
+                    <div class="side_video_description">
+                        <h3 class="side_video_title side_video_info">All 54 Modifiers in Blender Explained in 10 Minutes
+                        </h3>
+                        <p class="side_video_creator side_video_info">Blender Bash</p>
+                        <p class="side_video_views side_video_info">404K Views • 7 monthss ago</p>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=JZIFWEY3l6k" class="side_video">
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/JZIFWEY3l6k/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBV12nRLcvyc5EPQOXaU_5R11qDpw"
+                            alt="">
+                        <span class="timestamp">6:40</span>
+                    </div>
+                    <div class="side_video_description">
+                        <h3 class="side_video_title side_video_info">Blender 3.0 - Every New Feature in 6 minutes</h3>
+                        <p class="side_video_creator side_video_info">Blender</p>
+                        <p class="side_video_views side_video_info">551K Views • 2 weeks ago</p>
+                    </div>
+                </a>
+            </aside>
+        </div>
+    </main>
+</body>
+
+</html>
