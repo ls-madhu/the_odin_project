@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header_container">
+            <div class="header_left">
+                <p>Already have an Intuit account?</p>
+                <p class="forgot"><a href="https://accounts.intuit.com/signup.html#">I forgot my User ID or Password</a>
+                </p>
+            </div>
+            <div class="header_right">
+                <button class="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M8 0C10.7956 0 12.8929 2.18417 12.996 5.26154L13 5.5V7H14C15.1046 7 16 7.89543 16 9V18C16 19.1046 15.1046 20 14 20H2C0.89543 20 0 19.1046 0 18V9C0 7.89543 0.89543 7 2 7H3V5.5C3 2.29761 5.13272 0 8 0ZM14 9H2V18H14V9ZM8 11C9.10457 11 10 11.8954 10 13C10 13.7398 9.59828 14.3858 9.00108 14.7318L9 15.2C9 15.6418 8.55228 16 8 16C7.48716 16 7.06449 15.6912 7.00673 15.2933L7 15.2L6.99993 14.7324C6.40217 14.3866 6 13.7403 6 13C6 11.8954 6.89543 11 8 11ZM8 2C6.33153 2 5.08826 3.27741 5.0045 5.28242L5 5.5V7H11V5.5C11 3.37028 9.72806 2 8 2Z"
+                            fill="white" />
+                    </svg>
+                    <span>Sign In</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="logos">
+            <img src="images/logo.svg" alt="">
+            <div class="site_logos">
+                <img src="images/turbotax.svg" alt="">
+                <img src="images/quickbooks.svg" alt="">
+                <img src="images/mint.svg" alt="">
+            </div>
+        </div>
+        <div class="form_container">
+            <div class="form_elements">
+                <h2 class="form_title">Create an Intuit account</h2>
+                <p class="form_description">One account for everything Intuit. <a href="#">Learn more</a></p>
+                <form action="#">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="phone">Phone <span>(recommended)</span></label>
+                    <input type="tel" name="phone" id="phone">
+                    <p>Standard call, message, or data rates may apply.</p>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                    <button type="submit" class="btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8 0C10.7956 0 12.8929 2.18417 12.996 5.26154L13 5.5V7H14C15.1046 7 16 7.89543 16 9V18C16 19.1046 15.1046 20 14 20H2C0.89543 20 0 19.1046 0 18V9C0 7.89543 0.89543 7 2 7H3V5.5C3 2.29761 5.13272 0 8 0ZM14 9H2V18H14V9ZM8 11C9.10457 11 10 11.8954 10 13C10 13.7398 9.59828 14.3858 9.00108 14.7318L9 15.2C9 15.6418 8.55228 16 8 16C7.48716 16 7.06449 15.6912 7.00673 15.2933L7 15.2L6.99993 14.7324C6.40217 14.3866 6 13.7403 6 13C6 11.8954 6.89543 11 8 11ZM8 2C6.33153 2 5.08826 3.27741 5.0045 5.28242L5 5.5V7H11V5.5C11 3.37028 9.72806 2 8 2Z"
+                                fill="white" />
+                        </svg>
+                        <span>Create Account</span>
+                    </button>
+                </form>
+                <p class="terms">By selecting Create account, you agree to our <a
+                        href="https://accounts.intuit.com/terms-of-service">Terms</a> and have read and acknowledge our
+                    <a href="https://www.intuit.com/privacy/statement/">Global Privacy Statement</a>.
+                </p>
+                <p class="updates">Updates effective on January 10, 2022</p>
+            </div>
+            <div class="captcha">Invisible reCAPTCHA by Google <a
+                    href="https://www.google.com/intl/en/policies/privacy/">Privacy Policy</a> and <a
+                    href="https://www.google.com/intl/en/policies/terms/">Terms of Use</a>.
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="links">
+            <a href="https://www.intuit.com/legal/">Legal</a>
+            <a href="https://www.intuit.com/privacy/statement/">Privacy</a>
+            <a href="https://security.intuit.com/">Security</a>
+        </div>
+        <p>© 2021 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered
+            trademarks of Intuit Inc.
+            Terms and conditions, features, support, pricing, and service options subject to change without notice.</p>
+    </footer>
+</body>
+
+</html>
