@@ -22,7 +22,7 @@ a {
 }
 
 .para {
-  color: #4d4d4d;
+  color: #333;
   font-size: 17px;
   line-height: 1.1;
   letter-spacing: 0.015rem;
@@ -110,6 +110,11 @@ main > .container {
   flex-basis: 900px;
   padding: 10px;
   padding-top: 0;
+}
+
+.main__article .para {
+  font-family: serif;
+  font-size: 17px;
 }
 
 .advertisement__large {
@@ -321,6 +326,11 @@ footer h2 {
   margin-bottom: 20px;
 }
 
+.footer__form {
+  font-family: serif;
+  font-size: 17px;
+}
+
 .footer__form label {
   color: #555;
 }
@@ -330,12 +340,19 @@ footer h2 {
   background-color: transparent;
   border-bottom: 2px solid #444;
   width: 400px;
+  font-size: 17px;
+  font-family: serif;
   margin-left: 10px;
   margin-right: 10px;
 }
 
 .footer__form button {
   font-weight: 600;
+}
+
+footer ul {
+  font-family: serif;
+  font-size: 17px;
 }
 
 button.btn {
@@ -388,4 +405,75 @@ button.btn {
 .cookies {
   display: flex;
   justify-content: center;
+  margin: 10px;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.app h3 {
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.get_app {
+  margin-right: 30px;
+}
+
+.get_app > div {
+  display: flex;
+  align-items: center;
+}
+
+.android_app,
+.ios_app {
+  width: 110px;
+  margin: 15px 0px;
+  margin-right: 20px;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-bottom: 40px;
+}
+
+.copyright_statement {
+  font-size: 16px;
+  font-family: serif;
+}
+
+.back_to_top {
+  text-decoration: none;
+  color: #000;
+}
+
+.back_to_top p {
+  display: flex;
+  align-items: center;
+}
+
+.back_to_top p span {
+  width: 40px;
+  margin-left: 30px;
+}
+
+.cookies_settings {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px 12px;
+}
+
+.cookies_settings svg {
+  background-color: #6aaae4;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
 }
