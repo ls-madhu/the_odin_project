@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: "Heebo", sans-serif;
+  }
+  
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  header {
+    position: absolute;
+    width: 1440px;
+  }
+  
+  .navlist {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    width: 950px;
+    margin: 0 auto;
+    margin-top: 80px;
+    height: 36px;
+    border-radius: 5px;
+    background: #777;
+  }
+  
+  .navitem {
+    width: 100px;
+    text-align: center;
+    border-right: 1px solid #444;
+    height: 100%;
+  }
+  
+  .navitem:last-of-type {
+    width: 150px;
+    padding: 0 20px;
+    border-right: none;
+  }
+  
+  .navitem a {
+    text-decoration: none;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navsearch {
+    max-width: 100%;
+  }
+  
+  .navitem input {
+    max-width: 100%;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  .nav_svg {
+    background: url("https://web.archive.org/web/20140301005559im_/http://images.apple.com/global/nav/images/globalnav_text.svg")
+      top -1% left 50%;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hero {
+    background: url("https://web.archive.org/web/20140228114747im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg")
+      bottom;
+    color: #fff;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  
+  .hero__title {
+    font-size: 64px;
+    font-weight: 100;
+    cursor: pointer;
+  }
+  
+  .hero__subtitle {
+    font-size: 30px;
+    font-weight: 200;
+    max-width: 800px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  
+  .hero__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .hero__text:hover {
+    text-decoration: underline;
+  }
+  
+  .hero__text .svg_container {
+    margin-left: 10px;
+    width: 20px;
+  }
+  
+  .image__grid {
+    display: flex;
+  }
+  
+  .image__grid img {
+    max-width: 100%;
+  }
+  
+  .footer__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer__navlist {
+    display: flex;
+    list-style: none;
+  }
+  
