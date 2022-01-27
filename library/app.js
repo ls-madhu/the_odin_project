@@ -14,11 +14,13 @@ const form__author = modalForm.querySelector("input[name='author']");
 const form__pages = modalForm.querySelector("input[name='pages']");
 const form__read = modalForm.querySelector("input[name='read']");
 
-function Book(author, title, totalPages, read) {
-    this.author = author;
-    this.title = title;
-    this.totalPages = totalPages;
-    this.read = read;
+class Book {
+    constructor(author, title, totalPages, read) {
+        this.author = author;
+        this.title = title;
+        this.totalPages = totalPages;
+        this.read = read;
+    }
 }
 
 function addBookToLibrary(e) {
