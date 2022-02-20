@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --sub-heading-color: #222;
+  --link-color: #444;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,8 +17,8 @@ html {
 }
 
 body {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .container {
@@ -34,7 +41,7 @@ body {
 .course_title {
   font-size: 32px;
   margin-bottom: 10px;
-  color: #222;
+  color: var(--sub-heading-color);
 }
 
 .course_title > span {
@@ -53,7 +60,7 @@ body {
 }
 
 .project_item a {
-  color: #444;
+  color: var(--link-color);
   text-decoration: none;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid var(--link-color);
 }
